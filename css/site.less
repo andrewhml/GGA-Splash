@@ -96,7 +96,49 @@
 .test2:nth-of-type(6){.merri(2em,2,700);}
 .test2:nth-of-type(7){.merri(2em,2,900);}
 
+@font-face {
+    font-family: 'ariesregular';
+    src: url('fonts/aries-roman-webfont.eot');
+    src: url('fonts/aries-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aries-roman-webfont.woff2') format('woff2'),
+         url('fonts/aries-roman-webfont.woff') format('woff'),
+         url('fonts/aries-roman-webfont.ttf') format('truetype'),
+         url('fonts/aries-roman-webfont.svg#ariesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans-regular-webfont.eot');
+    src: url('fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/opensans-regular-webfont.woff') format('woff'),
+         url('fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
+.openf{font-family: open_sansregular;}
+.ariesf{font-family: ariesregular;}
+.open(@size,@height){.openf; font-size: @size; line-height: @height;}
+.aries(@size,@height){.ariesf; font-size: @size; line-height: @height;}
+
+/* Header Section */ 
+	#header{height: 385px;background: #5b95a0; 
+		h1{text-align: center;color: #fff; .aries(3.5em, 385px); }
+	}
+
+/* contentDiv */ 	
+	#contentDiv{
+		.content_inside{max-width: 1000px;margin: 0px auto; color: #777770;
+			p{.open(1em,1.5); margin: 35px 0px;width: 50%;
+				> a{text-decoration: none;color: #777770; text-decoration: none;}
+			}
+			a#contact_us{text-decoration: none;color: #fff; background: #287587; display: inline-block; background: #287587; .aries(1.5em, 70px); padding: 0px 50px;border-radius: 3px;}
+
+		}
+	}
 
 
 
