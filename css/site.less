@@ -125,22 +125,22 @@
 .open(@size,@height){.openf; font-size: @size; line-height: @height;}
 .aries(@size,@height){.ariesf; font-size: @size; line-height: @height;}
 
-body{overflow-x: hidden;}
+body{overflow-x: hidden;background: #56919a;}
 
 /* Header Section */ 
 	#header{background: url(../images/GGA_Header_small.jpg) top center;position: relative;z-index: 2;background-size: cover;
-		.header_inside{width: 100%; margin: 0 auto; position: relative;display: table;height: 325px; min-height: 325px;}  
-		h1{text-align: center;color: #fff; .aries(3.5em, 1.3); letter-spacing: 2px;display: table-cell;vertical-align: middle;}
+		.header_inside{width: 100%; margin: 0 auto; position: relative;display: table;height: 225px; min-height: 225px;}  
+		h1{text-align: center;color: #fff; .aries(3.5em, 1.3); letter-spacing: 2px;display: table-cell;vertical-align: middle;padding-top: 40px;}
 		img{.absolute; top: 20px; left: 50%; margin-left: -500px;  }
 	}
 
 /* contentDiv */ 	
-	#contentDiv{overflow: hidden;
+	#contentDiv{overflow: hidden;background: #fff; 
 		.content_inside{max-width: 1000px;margin: 0px auto; color: #777770;position: relative;z-index: 1;padding: 30px 0px 20px;
 			&:before{content: ''; display: block;background: url(../images/GGA_logo_white.png);background-size: contain; width: 947px;height: 650px;.absolute; top: -140px;right: -230px;z-index: -1;}
 			h1{.absolute; color: #777770; .aries(2.5em,1.3); top: 220px; right: 50px; letter-spacing: 1px; }
-			p{.open(1em,1.5); margin: 35px 0px;width: 50%;
-				&:last-child{font-size: .9em;white-space: nowrap;}
+			p{.open(.9em,1.5); margin: 30px 0px;width: 50%;
+				&:last-child{font-size: .8em;white-space: nowrap;}
 				> a{text-decoration: none;color: #777770; text-decoration: none;}
 			}
 			a#contact_us{text-decoration: none;color: #fff; background: #287587; display: inline-block; background: #287587; .aries(1.5em, 60px); padding: 0px 50px;border-radius: 3px;}
@@ -149,7 +149,7 @@ body{overflow-x: hidden;}
 	}
 
 /* Footer */ 
-	#footer{background: #56919a; text-align: center;padding: 60px 0px 20px;
+	#footer{background: #56919a; text-align: center;padding: 40px 0px 20px;
 		&:before{display: inline-block;content:''; background: url(../images/GGA_logo_footer.png);width: 58px;height: 40px;}
 		p{color: #ccc; .aries(.8em,50px); }
 	}
